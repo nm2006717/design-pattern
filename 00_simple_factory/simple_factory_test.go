@@ -18,3 +18,18 @@ func TestType2(t *testing.T) {
 		t.Fatal("Type2 test fail")
 	}
 }
+
+func TestCircle(t *testing.T) {
+	Shape := GetShaper("circle")
+	Shape.Draw()
+}
+
+func TestRectangle(t *testing.T) {
+	Shape := GetShaper("rectangle")
+	Shape.Draw()
+}
+
+func TestSquare(t *testing.T) {
+	Shape := GetShaper("square")
+	Shape.Draw()
+}
